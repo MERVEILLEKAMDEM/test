@@ -58,30 +58,26 @@ Terraform is an open-source infrastructure as code (IaC) tool created by HashiCo
  <h3>Possible Use cases</h3>
 <br>
 <br>
-1.  <h4>Provisioning Infrastructure:</h4>
-   - Create virtual machines, networking components, storage, and databases across different cloud providers.
+1.  <h4>Storing terraform state with s3 bucket:</h4>
+   - Storing Terraform state files in an S3 bucket is a common practice to centralize and manage the state of your infrastructure deployments.
 <br>
 <br>
-2. <h4>Managing Kubernetes Clusters:</h4>
-   - Deploy and manage Kubernetes clusters and associated resources (like pods, services, etc.) using Terraform.
+2. <h4>Create a dynamoDB table to lock terraform state:</h4>
+   - Terraform configuration snippet creates a DynamoDB table named "terraform-state-lock" with a string attribute "LockID" for state locking.
 <br>
 <br>
-3. <h4>Continuous Integration/Continuous Deployment (CI/CD):</h4>
-   - Integrate with CI/CD pipelines to automate infrastructure provisioning and configuration as part of the application deployment process.
+3. <h4>Create aws resources with terraform syntax:</h4>
+   - Terraform configuration creates two AWS resources: an S3 bucket with private access control and an EC2 instance tagged as "MyEC2Instance".
 <br>
 <br>
-4. <h4> Environment Management:<h4>
-   - Create and manage multiple environments (development, staging, production) consistently using the same codebase.
+4. <h4> Git repository setup for terraform code storage:<h4>
+   -guide outlines setting up a Git repository for storing Terraform code, allowing version control, collaboration, and tracking changes to infrastructure configurations.
 <br>
 <br>
-5. <h4>Infrastructure Compliance:<h4>
-   - Ensure compliance with organizational policies by codifying and enforcing infrastructure standards.
+5. <h4>cloning git repository to my local machine:<h4>
 <br>
-<br>
-6. <h4>Disaster Recovery:</h4>
-   - Define backup infrastructure and disaster recovery processes, allowing for quick recovery in case of failures.
-<br>
-<br>
+6. <h4>Auto scaling group for ECS service creattion with terraform:</h4>
+   - Terraform configuration sets up an Auto Scaling Group for an Amazon ECS service, including the launch configuration, autoscaling group settings, and an ECS service with load balancer configuration.etc..
 <h2>Conclusion</h2>
 <br>
 <br>
