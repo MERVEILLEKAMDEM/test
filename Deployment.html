@@ -8,62 +8,64 @@
 </head>
 <body>
     <h1>Deploy AWS Cloud Infrastructure With Terraform</h1>
-
+<div class="container">
     <p>Here we will see simple steps that will permit us to Deploy aws cloud infrastructure with terraform</p>
-<br>
-     <h3>1.Login Into Terraform Platform</h3>
-     - After the successful Installation of terraform in your pc, now we have to login into terraform platform. <br> To do that you simply open your terminal or for those who are using vscode simply click on terminal 
-and type the command <h4>"terraform login"</h4>, as shown below.
-<h4>step 1.</h4>
-Enter the command "terraform login" <br>
-<img src="login.png" alt="login"> <br>
-Then click on enter, it will prompt you on a website, where you will need to generate a token, just click on generate a token and copy the token that will be given to you, as shown below. <br>
-<h4>step 2.</h4>
-Type "yes" and "enter"  <br>
-<img src="step1.png" alt="yes"> <br>
-<h4>step 3.</h4>
-click on generate token <br>
-<img src="token.png" alt="token"> <br>
-<h4>step 4.</h4>
-copy the token given to you <br>
-<img src="step2.png" alt="copy"> <br>
-<h4>step 5.</h4>
-paste the token in the prompt <br>
-<img src="step3.png" alt="paste">
-<h3>2.Create A New Terraform Configuration File</h3>
-- After the successful login into terraform platform, now we have to create a new terraform configuration file call main.tf, as shown below <br>
-<h4>step 1.</h4>
-create a main file for it configuration  <br>
-<img src="main.png" alt="main"> <br>
-<h4>Input The Lines Of Code For The Configuration</h4>
-Enter in the main file and copy some lines of code for the configuration <br>
-<img src="config.png" alt="configuration">
-<h4>Download extension</h4>
-You have to download an extension for the code to run properly, as shown below. <br>
-<img src="extension.png" alt="extension"> <br>
-<h4>Note</h4>
-<p>If you don't yes have an instance create in your aws acount, you have to do so, as you can see on the picture below my instance have been create and it's running. <br> If you don't know how to create one simply go and look videos on youtube.</p>
-<img src="instance.png" alt="instance">
-<h3>3Install AWS CLIV2</h3>
-<h4>step 1.</h4>
-Click on this link "https://awscliamazonaws.com/AWSCLIV2.msi" download the want of window, when okay double click on the package and follow the steps as shown on the pictures below. <br>
-<img src="t_aws1.png" alt="1"> <br>
-<img src="t_aws2.png" alt="2"> <br>
-<img src="t_aws3.png" alt="3"> <br>
-<img src="t_aws4.png" alt="4"> <br>
-When finish you can enter the command "aws --version" to verify the Installation. <br>
-<img src="test_aws.png" alt="test">
-<h3>Create A New User</h3>
-Firstly type IAM in the research an and click on it <br>
-<img src="iam.png" alt="IAM"> <br>
-Then click on "user" and "create user", as you can see on the picture below i have already created my, so do create yours. <br>
-<img src="user.png" alt="user"> <br>
-Then you have to create an access key and a secret access key for the user. Click on the user you just created and click on security credentials. <br>
-<img src="security.png" alt="security"> <br>
-Scroll and click on create access key. <br>
-<img src="create.png" alt="create"> <br>
-Take the option command line interface and click on next. <br>
-<img src="next.png" alt="next"> <br>
-The description is optional, then click on "create access key". <br>
-Then open your terminal and type this command "aws configure" and just follow the steps as shown on the picture below <br>
-<img src="configure.png" alt="configure">
+    <br>
+         <h3>1.Login Into Terraform Platform</h3>
+         - After the successful Installation of terraform in your pc, now we have to login into terraform platform. <br> To do that you simply open your terminal or for those who are using vscode simply click on terminal 
+    and type the command <h4>"terraform login"</h4>, as shown below.
+    <h4>step 1.</h4>
+    Enter the command "terraform login" <br>
+    <img src="login.png" alt="login"> <br>
+    Then click on enter, it will prompt you on a website, where you will need to generate a token, just click on generate a token and copy the token that will be given to you, as shown below. <br>
+    <h4>step 2.</h4>
+    Type "yes" and "enter"  <br>
+    <img src="step1.png" alt="yes"> <br>
+    <h4>step 3.</h4>
+    click on generate token <br>
+    <img src="token.png" alt="token"> <br>
+    <h4>step 4.</h4>
+    copy the token given to you <br>
+    <img src="step2.png" alt="copy"> <br>
+    <h4>step 5.</h4>
+    paste the token in the prompt <br>
+    <img src="step3.png" alt="paste">
+    <h3>2.Create A New Terraform Configuration File</h3>
+    - After the successful login into terraform platform, now we have to create a new terraform configuration file call main.tf, as shown below <br>
+    <h4>step 1.</h4>
+    create a main file for it configuration  <br>
+    <img src="main.png" alt="main"> <br>
+    <h4>Input The Lines Of Code For The Configuration</h4>
+    Enter in the main file and copy some lines of code for the configuration <br>
+    <img src="config.png" alt="configuration">
+    <h4>Download extension</h4>
+    You have to download an extension for the code to run properly, as shown below. <br>
+    <img src="extension.png" alt="extension"> <br>
+    <h4>Note</h4>
+    <p>If you don't yes have an instance create in your aws acount, you have to do so, as you can see on the picture below my instance have been create and it's running. <br> If you don't know how to create one simply go and look videos on youtube.</p>
+    <img src="instance.png" alt="instance">
+    <h3>3Install AWS CLIV2</h3>
+    <h4>step 1.</h4>
+    Click on this link "https://awscliamazonaws.com/AWSCLIV2.msi" download the want of window, when okay double click on the package and follow the steps as shown on the pictures below. <br>
+    <img src="t_aws1.png" alt="1"> <br>
+    <img src="t_aws2.png" alt="2"> <br>
+    <img src="t_aws3.png" alt="3"> <br>
+    <img src="t_aws4.png" alt="4"> <br>
+    When finish you can enter the command "aws --version" to verify the Installation. <br>
+    <img src="test_aws.png" alt="test">
+    <h3>Create A New User</h3>
+    Firstly type IAM in the research an and click on it <br>
+    <img src="iam.png" alt="IAM"> <br>
+    Then click on "user" and "create user", as you can see on the picture below i have already created my, so do create yours. <br>
+    <img src="user.png" alt="user"> <br>
+    Then you have to create an access key and a secret access key for the user. Click on the user you just created and click on security credentials. <br>
+    <img src="security.png" alt="security"> <br>
+    Scroll and click on create access key. <br>
+    <img src="create.png" alt="create"> <br>
+    Take the option command line interface and click on next. <br>
+    <img src="next.png" alt="next"> <br>
+    The description is optional, then click on "create access key". <br>
+    Then open your terminal and type this command "aws configure" and just follow the steps as shown on the picture below <br>
+    <img src="configure.png" alt="configure">
+</div>
+   
